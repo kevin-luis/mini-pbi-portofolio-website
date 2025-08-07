@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio seorang Android Native Developer dengan keahlian Kotlin, Java, dan Jetpack Compose">
+    <meta name="keywords" content="Android Developer, Kotlin, Java, Mobile App, Jetpack Compose">
+    <meta name="author" content="Kevin Luis Banamtuan">
+    <title>Kevin Luis Banamtuan | Android Native Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <i class="fab fa-android"></i> Kevin Luis Banamtuan | Android Dev
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right">
+                        <h1>Hai, saya Android Native Developer</h1>
+                        <p class="subtitle">Membuat aplikasi mobile yang powerful dan user-friendly dengan teknologi
+                            Android terbaru seperti Kotlin, Jetpack Compose, dan modern architecture patterns.</p>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn" id="downloadCV">
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                            <a href="#projects" class="btn btn-outline">
+                                <i class="fas fa-eye"></i> Lihat Projek
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://avatars.githubusercontent.com/u/93308196?v=4" alt="Profile Picture"
+                            id="heroImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Projects</h2>
+                    <p>Berikut adalah beberapa project Android yang telah saya kerjakan dengan berbagai teknologi modern
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <i class="fa-solid fa-masks-theater"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Kultura</h3>
+                            <p>Aplikasi Scan Topeng Bali untuk belajar jenis - jenis Topeng Bali menggunakan Model
+                                Machine Learning VGG16 dengan architecture CNN.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Retrofit</span>
+                                <span class="tech-tag">CameraX</span>
+                                <span class="tech-tag">MVVM</span>
+                                <span class="tech-tag">Material Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kevin-luis/Kultura/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <i class="fa-brands fa-bitcoin"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>CryptoTracker</h3>
+                            <p>Aplikasi Tracker Crypto untuk memantau pergerakan harga koin - koin Crypto secara
+                                Realtime.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Retrofit</span>
+                                <span class="tech-tag">MVI</span>
+                                <span class="tech-tag">Material3 Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kevin-luis/AndroidCourseProjects/tree/main/CryptoTracker"
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mandiri News App</h3>
+                            <p>Aplikasi ini merupakan Tugas Akhir Project-Based Virtual Intern: Mobile Apps Developer Bank Mandiri x Rakamin Academy. Aplikasi ini dibuat untuk menampilkan berita terkini dan semua berita yang relevan.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Retrofit</span>
+                                <span class="tech-tag">MVVM</span>
+                                <span class="tech-tag">Room Database</span>
+                                
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kevin-luis/NewsApp" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Generative AI</h3>
+                            <p>Aplikasi Chat AI sederhana mirip seperti BlackboxAI yang mempunyai banyak model
+                                didalamnya seperti Llama, Mistral, Deepseek, Gemma, dll.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Retrofit</span>
+                                <span class="tech-tag">MVVM</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kevin-luis/KotlinSmallProjects" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>About Me</h2>
+                    <p>Mengenal lebih dekat tentang background dan keahlian saya sebagai Android Developer</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>Saya adalah seorang Android Native Developer pemula yang tengah mendalami dunia pengembangan
+                            aplikasi mobile. Dengan semangat belajar yang tinggi dan ketertarikan mendalam terhadap
+                            teknologi Android, saya telah menyelesaikan sejumlah proyek individu sebagai bagian dari
+                            upaya untuk mengasah kemampuan teknis dan kreativitas saya.</p>
+
+                        <p>Keahlian saya meliputi pengembangan aplikasi Android menggunakan Kotlin,
+                            implementasi modern architecture patterns seperti MVVM, MVI dan Clean Architecture, serta
+                            integrasi dengan berbagai API dan layanan cloud. Saya juga aktif mengikuti perkembangan
+                            teknologi Android terbaru termasuk Jetpack Compose untuk UI development.</p>
+
+                        <p>Selain technical skills, saya memiliki kemampuan problem-solving yang kuat dan senang
+                            berkolaborasi dalam tim untuk menciptakan solusi teknologi yang berdampak positif.</p>
+                    </div>
+                    <div class="skills-grid" data-aos="fade-left">
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <h4>Android Development</h4>
+                            <p>Native Android dengan Kotlin</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <h4>Database</h4>
+                            <p>Room, SQLite, Firebase Firestore, MongoDB</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <h4>Cloud Services</h4>
+                            <p>Firebase, Google Cloud Platform, Supabase</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>UI/UX Design</h4>
+                            <p>Material Design, Jetpack Compose</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2 style="color: white;">Get In Touch</h2>
+                    <p style="color: rgba(255,255,255,0.8);">Mari berkolaborasi untuk mewujudkan ide aplikasi mobile
+                        Anda</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Let's Work Together</h3>
+                        <p>Saya selalu terbuka untuk peluang kerjasama baru, baik untuk project freelance maupun
+                            full-time position. Jangan ragu untuk menghubungi saya!</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/kevinbanamtuan" class="social-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/kevin-luis" class="social-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:kevinbanamtuan10@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="form-error" id="nameError">Nama harus diisi</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="form-error" id="emailError">Email tidak valid</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message"
+                                placeholder="Ceritakan tentang project atau kerjasama yang ingin Anda diskusikan..."
+                                required></textarea>
+                            <div class="form-error" id="messageError">Pesan harus diisi</div>
+                        </div>
+                        <button type="submit" class="btn" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kevin Luis Banamtuan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
