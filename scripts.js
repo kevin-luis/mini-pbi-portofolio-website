@@ -54,8 +54,6 @@ function createScrollToTopButton() {
 
     // Append to body
     document.body.appendChild(scrollToTopBtn);
-
-    console.log('Scroll-to-top button created successfully');
 }
 
 function handleScrollToTopButton(scrollY) {
@@ -151,6 +149,25 @@ function updateActiveNavLink() {
 
 window.addEventListener('scroll', updateActiveNavLink);
 
+// Skills Progress Bar Animation
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-fill');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBar = entry.target;
+                const width = progressBar.style.width;
+                progressBar.style.width = '0%';
+                setTimeout(() => {
+                    progressBar.style.width = width;
+                }, 300);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    progressBars.forEach(bar => observer.observe(bar));
+}
+
 // Form Validation and Submission
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
@@ -236,19 +253,14 @@ document.getElementById('downloadCV').addEventListener('click', function (e) {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOM loaded, initializing scroll-to-top button...');
     createScrollToTopButton();
-
-    // Initial scroll handler call
+    animateProgressBars();
     handleScroll();
-
-    console.log('Portfolio website initialized successfully!');
 });
 
 // Also initialize on window load as backup
 window.addEventListener('load', function () {
     if (!scrollToTopBtn) {
-        console.log('Creating scroll-to-top button on window load...');
         createScrollToTopButton();
         handleScroll();
     }
