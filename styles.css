@@ -256,6 +256,63 @@ body {
     margin: 0 auto;
 }
 
+/* About Section */
+.about {
+    background: var(--white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.about-text p {
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.skill-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-item h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -345,63 +402,6 @@ body {
 
 .project-links a:hover {
     color: var(--accent-color);
-}
-
-/* About Section */
-.about {
-    background: var(--white);
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-light);
-}
-
-.about-text p {
-    margin-bottom: 2rem;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-
-.skill-item {
-    background: var(--background-color);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-    transition: var(--transition);
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow);
-}
-
-.skill-item i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.skill-item h4 {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.skill-item p {
-    color: var(--text-light);
-    font-size: 0.9rem;
 }
 
 /* Contact Section */
@@ -563,6 +563,42 @@ body {
     transition: width 0.1s ease;
 }
 
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: var(--shadow-lg);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: var(--accent-color);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.4);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -631,7 +667,11 @@ body {
     }
 
     .hero {
-        padding: 6rem 0 2rem;
+        padding: 8rem 0 2rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
     }
 
     .section {
@@ -642,40 +682,4 @@ body {
     .contact-form {
         padding: 1.5rem;
     }
-}
-
-/* Scroll to Top Button*/
-.scroll-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1000;
-    box-shadow: var(--shadow-lg);
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.scroll-to-top:hover {
-    background: var(--accent-color);
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.4);
 }
